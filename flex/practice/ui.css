@@ -74,3 +74,14 @@
     background-position: center;
     background-size: cover;
 }
+
+/* friend list */
+.friend-item {
+    align-items: center;
+}
+.user-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
