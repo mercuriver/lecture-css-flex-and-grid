@@ -56,3 +56,21 @@
     content: '';
     margin-right: 0.5em;
 }
+
+/* message */
+.user-item {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.user-photo {
+    flex-shrink: 0;
+    width: 50px;
+    height:50px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
