@@ -1,3 +1,4 @@
+/* menu */
 .menu {
     display: flex;
     
@@ -24,4 +25,24 @@
 }
 .menu-link:hover {
     color: white;
+}
+
+/* search */
+.search-form {
+    display: flex;
+    height: 40px;
+}
+.search-form input[type='search'] {
+    flex: 1;
+    margin-right: 10px;
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+}
+.search-form input[type='submit'] {
+    width: 4em;
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 1rem;
+    background: gold;
 }
