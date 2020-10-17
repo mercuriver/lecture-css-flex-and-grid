@@ -48,6 +48,9 @@
 }
 
 /* info-list */
+.info-list {
+    margin-bottom: 2em;
+}
 .info-list-item {
     display: flex;
     margin: 0.5em 0;
@@ -58,6 +61,9 @@
 }
 
 /* message */
+.user-list {
+    margin-bottom: 2em;
+}
 .user-item {
     display: flex;
     margin-bottom: 1.5em;

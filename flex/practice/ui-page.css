@@ -1,0 +1,73 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search-form {
+    margin-left: auto; /* justify-content: space-between; 대신 사용 가능 */
+    width: 300px;
+    max-width: 60%;    
+    margin-right: 3rem;
+}
+
+.primary {
+    padding: 1rem;
+}
+
+.secondary {
+    padding: 1rem;
+}
+
+.secondary-a {
+    background-color: white;
+}
+
+.secondary-b {
+    color: white;
+    background-color: #666;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    top: 80px;
+}
+
+#modal-switch:checked ~ .modal {
+    display: flex;
+}
+
+label[for="modal-switch"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+label[for="modal-switch"]:before {
+    content: "⌘";
+    font-size: 2rem;
+}
+
+#modal-switch:checked ~ label[for="modal-switch"]:before {
+    color: dodgerblue;
+}
+
+#modal-switch,
+label[for="modal-switch"] span {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
