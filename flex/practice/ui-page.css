@@ -32,11 +32,12 @@
 .footer {
     padding: 1rem;
     text-align: center;
+    border-top: 1px solid lightgray;
 }
 
 .modal {
     display: none;
-    top: 80px;
+    top: 80px; /* 개선 필요 */
 }
 
 #modal-switch:checked ~ .modal {
@@ -67,7 +68,50 @@ label[for="modal-switch"]:before {
 label[for="modal-switch"] span {
     overflow: hidden;
     position: absolute;
+    top: 0;
     width: 1px;
     height: 1px;
     opacity: 0;
+}
+
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header, .menu {
+        width: 100%;
+    }
+
+    .primary {
+        width: 60%;
+        order: 2;
+    }
+    .footer {
+        width: 100%;
+        order: 100;
+    }
+
+    .secondary {
+        width: 20%;
+    }
+
+    .secondary-a {
+        order: 1;
+    }
+
+    .secondary-b {
+        order: 3;
+    }
+}
+
+@media (min-width: 1500px) {
+    .primary {
+        /* width: calc(100% - 600px); */
+        /* flex: 1 1 auto; */
+        flex-grow: 1;
+    }
+    .secondary {
+        width: 300px;
+    }
 }

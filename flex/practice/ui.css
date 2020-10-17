@@ -145,7 +145,7 @@
     }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: 1024px)  {
     .card-item {
         width: 33.33333%;
     }
