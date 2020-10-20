@@ -1,0 +1,117 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search-form {
+    margin-left: auto; /* justify-content: space-between; 대신 사용 가능 */
+    width: 300px;
+    max-width: 60%;    
+    margin-right: 3rem;
+}
+
+.primary {
+    padding: 1rem;
+}
+
+.secondary {
+    padding: 1rem;
+}
+
+.secondary-a {
+    background-color: white;
+}
+
+.secondary-b {
+    color: white;
+    background-color: #666;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+.modal {
+    display: none;
+    top: 80px; /* 개선 필요 */
+}
+
+#modal-switch:checked ~ .modal {
+    display: flex;
+}
+
+label[for="modal-switch"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+label[for="modal-switch"]:before {
+    content: "⌘";
+    font-size: 2rem;
+}
+
+#modal-switch:checked ~ label[for="modal-switch"]:before {
+    color: dodgerblue;
+}
+
+#modal-switch,
+label[for="modal-switch"] span {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header, .menu {
+        width: 100%;
+    }
+
+    .primary {
+        width: 60%;
+        order: 2;
+    }
+    .footer {
+        width: 100%;
+        order: 100;
+    }
+
+    .secondary {
+        width: 20%;
+    }
+
+    .secondary-a {
+        order: 1;
+    }
+
+    .secondary-b {
+        order: 3;
+    }
+}
+
+@media (min-width: 1500px) {
+    .primary {
+        /* width: calc(100% - 600px); */
+        /* flex: 1 1 auto; */
+        flex-grow: 1;
+    }
+    .secondary {
+        width: 300px;
+    }
+}
