@@ -111,6 +111,11 @@
 }
 
 /* card-item */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 2%;
+}
 .card-item {
     display: flex;
     flex-direction: column;
@@ -131,22 +136,4 @@
     flex: 1 1 auto; /* flex-grow: 1; */
     padding: 1em;
     background-color: gold;
-}
-
-@media (min-width: 600px)  {
-    .card-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -1rem;
-    }
-    .card-item {
-        width: 50%;
-        padding: 0 1rem;
-    }
-}
-
-@media (min-width: 1024px)  {
-    .card-item {
-        width: 33.33333%;
-    }
 }
